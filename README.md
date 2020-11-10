@@ -3,7 +3,7 @@
 Anomaly Detection 모델로 Variational Auto-Encoder, Auto-Encoder, LSTM based Auto-Encoder를 포함하고 있습니다.
 
 ### Training Process
-![](picture/sample.gif)
+![](picture/animation_sample.gif)
 
 ### Inference Process
 
