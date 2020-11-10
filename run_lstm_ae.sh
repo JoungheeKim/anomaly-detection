@@ -32,7 +32,7 @@ for TARGET_RESOURCE in "20180125_20180125" "20171106_20171108" "20181110_2018111
 
       mkdir -p ${PICTURE_DIR}"/"${MODEL_TYPE}"/"${TARGET_RESOURCE}
 
-      python train.py\
+      python train_process/train.py\
             --train_file=${TRAIN_DATA_FILE}\
             --valid_file=${VALID_DATA_FILE}\
             --test_file=${TEST_DATA_FILE}\
@@ -53,7 +53,7 @@ for TARGET_RESOURCE in "20180125_20180125" "20171106_20171108" "20181110_2018111
             --norm_file=${NORMALIZE_FILE}\
             --num_layers=${NUM_LAYERS}
 
-      python make_picture.py\
+      python train_process/make_picture.py\
             --pre_trained_dir=${OUTPUT_DIR}\
             --picture_dir=${PICTURE_DIR}"/"${MODEL_TYPE}"/"${TARGET_RESOURCE}\
             --test_file=${ALL_DATA_FILE}
